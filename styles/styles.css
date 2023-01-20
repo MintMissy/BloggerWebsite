@@ -1,0 +1,178 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variables */
+:root {
+  /* Margins */
+  --spacer-xs: 4em;
+  --spacer-s: 8em;
+  --spacer-m: 16em;
+  --spacer-l: 24em;
+  --spacer-xl: 32em;
+  /* Font families */
+  --font-family-primary: ;
+  --font-family-secondary: ;
+  /* Fonts weights */
+  --font-weight-thin: ;
+  --font-weight-normal: ;
+  --font-weight-bold: ;
+  /* Fonts sizes */
+  --font-size-xs: 0.5rem;
+  --font-size-s: 0.75rem;
+  --font-size-m: 1rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  /* Breakpoints */
+  --mobile-breakpoint: 400px;
+  --tablet-breakpoint: 800px;
+  --desktop-breakpoint: 1000px;
+  /* Z indexes */
+  --z-index-nav: 12;
+}
+
+@media screen and (max-width: var(--tablet-breakpoint)) {
+  :root {
+    /* Font sizes for smartphones */
+    --font-size-xs: 0.25rem;
+    --font-size-s: 0.5rem;
+    --font-size-m: 0.75rem;
+    --font-size-l: 1rem;
+    --font-size-xl: 1.5rem;
+  }
+}
+:root {
+  /*** Dark theme colors ***/
+  /* Primary Colors */
+  --clr-primary-light: #5cf13f;
+  --clr-primary-main: #3fe544;
+  --clr-primary-dark: #37d486;
+  /* Secondary Colors */
+  --clr-secondary-light: #3ce7bc;
+  --clr-secondary-main: #37d3cb;
+  --clr-secondary-dark: #2bafc7;
+  /* Neutral colors */
+  --clr-n1: #09050d;
+  --clr-n2: #211b24;
+  --clr-n3: #333333;
+  --clr-n4: #4d4d4d;
+  --clr-n5: #cccccc;
+  --clr-n6: #e6e6e6;
+  --clr-n7: #f2f2f2;
+  --clr-n8: #ffffff;
+}
+
+/* Text properties */
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+h2 {
+  font-size: var(--font-size-l);
+}
+
+h3 {
+  font-size: var(--font-size-m);
+}
+
+p {
+  font-size: var(--font-size-m);
+  font-family: var(--font-family-secondary);
+}
+
+body {
+  background: var(--color-body-bg);
+  font-family: "Nunito", sans-serif;
+}/*# sourceMappingURL=styles.css.map */
