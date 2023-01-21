@@ -136,20 +136,51 @@ body {
 }
 
 .btn {
-	padding: 0.35rem 1.25rem;
+	position: relative;
+	padding: 0.5rem 1.25rem;
 	border: none;
 	border-radius: 4px;
 	outline: none;
-	background: transparent;
-	color: var(--clr-text-1);
+	color: var(--clr-n1);
 	font-size: 1.25rem;
 	font-weight: 700;
 	cursor: pointer;
+
+	& > * {
+		z-index: 10;
+		position: relative;
+	}
+
+	&::before {
+		z-index: 1;
+		position: absolute;
+		top: -1px;
+		bottom: -1px;
+		width: 0;
+		border-radius: 4px;
+		background-color: var(--clr-n2);
+		content: "";
+		transition: width 0.2s;
+		inset: 0;
+	}
+
+	&:hover {
+		color: var(--clr-n8);
+		&::before {
+			width: 100%;
+		}
+	}
 }
 
 .btn--primary {
 	background-color: var(--clr-primary-main);
-	color: var(--clr-n1);
+
+	&::before {
+		background-color: var(--clr-secondary-main);
+	}
+	&:hover {
+		color: var(--clr-n1);
+	}
 }
 
 .btn--icon {
@@ -260,10 +291,19 @@ body {
 			flex-wrap: wrap;
 			align-items: center;
 			margin-top: 1.5rem;
-			gap: 1.5rem 2rem;
+			gap: 1.5rem 1rem;
 
 			.btn--view-channel {
-				padding: 0;
+				background: transparent;
+				color: white;
+
+				&::before {
+					background-color: var(--clr-n8);
+				}
+
+				&:hover {
+					color: var(--clr-n0);
+				}
 			}
 		}
 	}
@@ -296,11 +336,11 @@ body {
 
 .about {
 	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
 	padding-bottom: 2rem;
 	background: radial-gradient(circle at 100%, var(--clr-n1), var(--clr-n2));
 	gap: 2rem;
-	flex-direction: column-reverse;
 
 	@media screen and (min-width: 600px) {
 		flex-direction: row;
@@ -322,10 +362,10 @@ body {
 		max-width: 60rem;
 		padding: 2rem 1rem 0rem;
 		gap: 2rem;
-		
+
 		@media screen and (min-width: 600px) {
-			gap: 5rem;
 			padding: 4.5rem 2rem 1.5rem 1rem;
+			gap: 5rem;
 		}
 
 		@media screen and (min-width: 900px) {
@@ -598,32 +638,15 @@ body {
 		}
 
 		&__link {
-			position: relative;
 			margin-top: 0.5rem;
 			padding: 0.5rem 0;
-			color: var(--clr-n1);
-
-			& > * {
-				z-index: 10;
-				position: relative;
-			}
 
 			&::before {
-				z-index: 1;
-				position: absolute;
-				top: 0;
 				right: 5rem;
-				bottom: 0;
 				left: -0.5rem;
-				width: 0;
-				border-radius: 4px;
-				background-color: var(--clr-n2);
-				content: "";
-				transition: width 0.2s;
 			}
 
 			&:hover {
-				color: var(--clr-n8);
 				&::before {
 					width: 115%;
 				}
