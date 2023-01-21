@@ -216,10 +216,15 @@ body {
 }
 
 .navbar {
+	display: none;
 	z-index: 1;
 	position: absolute;
 	top: 1rem;
 	padding-inline: 2rem;
+
+	@media screen and (min-width: 600px) {
+		display: block;
+	}
 
 	&__links {
 		display: flex;
@@ -259,8 +264,12 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		padding-top: 7rem;
+		padding-top: 2.25rem;
 		translate: 0 -10%;
+
+		@media screen and (min-width: 600px) {
+			padding-top: 7rem;
+		}
 
 		> * {
 			width: 100%;
