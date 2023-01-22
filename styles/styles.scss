@@ -30,6 +30,8 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+	max-width: 100vw;
+	overflow-x: hidden;
 	min-height: 100vh;
 	line-height: 1.5;
 	text-rendering: optimizeSpeed;
@@ -328,17 +330,6 @@ body {
 			width: 100%;
 			max-width: 40rem;
 			border-radius: 1rem;
-		}
-
-		&::before {
-			z-index: -1;
-			position: absolute;
-			top: -2rem;
-			right: -2rem;
-			bottom: 2rem;
-			left: 2rem;
-			border: 1rem solid var(--clr-n1);
-			content: "";
 		}
 	}
 }
@@ -649,6 +640,7 @@ body {
 		&__link {
 			margin-top: 0.5rem;
 			padding: 0.5rem 0;
+			background: transparent;
 
 			&::before {
 				right: 5rem;
