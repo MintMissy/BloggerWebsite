@@ -5,7 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mica Miyanna | Traveling Blogger and YouTuber</title>
-		<meta name="description" content="" />
+		<meta
+			name="description"
+			content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eligendi eos necessitatibus, recusandae, consectetur quas nobis iusto quos incidunt ab accusamus inventore temporibus sunt enim voluptatibus dolor, officiis provident nemo?"
+		/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,38 +23,38 @@
 	<body>
 		<nav class="navbar">
 			<ul class="navbar__links">
-				<li class="navbar__links__link"><a href="" class="underline-animation">About</a></li>
-				<li class="navbar__links__link"><a href="" class="underline-animation">Timeline</a></li>
-				<li class="navbar__links__link"><a href="" class="underline-animation">Videos</a></li>
-				<li class="navbar__links__link"><a href="" class="underline-animation">Socials</a></li>
-				<li class="navbar__links__link"><a href="" class="underline-animation">Contact</a></li>
+				<li class="navbar__links__link"><a href="#about" class="underline-animation">About</a></li>
+				<li class="navbar__links__link"><a href="#timeline" class="underline-animation">Timeline</a></li>
+				<li class="navbar__links__link"><a href="#videos" class="underline-animation">Videos</a></li>
+				<li class="navbar__links__link"><a href="#socials" class="underline-animation">Socials</a></li>
+				<li class="navbar__links__link"><a href="#contact" class="underline-animation">Contact</a></li>
 			</ul>
 		</nav>
+		<header class="home-hero">
+			<div class="home-hero__content">
+				<h2 class="home-hero__content__sub-title header--secondary">Most Popular Blog in 2022</h2>
+				<h1 class="home-hero__content__title header--primary">Mica Miyanna - Blogger</h1>
+				<p class="home-hero__content__description">
+					We're a YouTube channel that Lorem, ipsum dolor. Lorem, ipsum dolor. features gameplay footage, reviews,
+					walkthroughs, and more. nnel that Lorem, ipsum dolor. Lorem, ips . features gamep
+				</p>
+				<div class="home-hero__content__action">
+					<button class="home-hero__content__action__contact btn btn--icon btn--icon--small btn--primary">
+						<i class="bi bi-envelope"></i>
+						<span>Contact</span>
+					</button>
+					<button class="home-hero__content__action__channel btn btn--icon btn--icon--small btn--view-channel">
+						<i class="bi bi-play-circle"></i>
+						<span>View Channel</span>
+					</button>
+				</div>
+			</div>
+			<div class="home-hero__image">
+				<img src="./image/woman-3169726_960_720.jpg" alt="" />
+			</div>
+		</header>
 		<main>
-			<header class="home-hero">
-				<div class="home-hero__content">
-					<h2 class="home-hero__content__sub-title header--secondary">Most Popular Blog in 2022</h2>
-					<h1 class="home-hero__content__title header--primary">Mica Miyanna - Blogger</h1>
-					<p class="home-hero__content__description">
-						We're a YouTube channel that Lorem, ipsum dolor. Lorem, ipsum dolor. features gameplay footage, reviews,
-						walkthroughs, and more. nnel that Lorem, ipsum dolor. Lorem, ips . features gamep
-					</p>
-					<div class="home-hero__content__action">
-						<button class="home-hero__content__action__contact btn btn--icon btn--icon--small btn--primary">
-							<i class="bi bi-envelope"></i>
-							<span>Contact</span>
-						</button>
-						<button class="home-hero__content__action__channel btn btn--icon btn--icon--small btn--view-channel">
-							<i class="bi bi-play-circle"></i>
-							<span>View Channel</span>
-						</button>
-					</div>
-				</div>
-				<div class="home-hero__image">
-					<img src="./image/woman-3169726_960_720.jpg" alt="" />
-				</div>
-			</header>
-			<article class="about">
+			<article class="about" id="about">
 				<div class="about__image">
 					<img src="./image/smile-2072907_960_720.jpg" alt="" />
 				</div>
@@ -91,7 +94,7 @@
 					</div>
 				</div>
 			</article>
-			<article class="timeline-section">
+			<article class="timeline-section" id="timeline">
 				<div class="timeline-section__image">
 					<img src="./image/bicycle-1822640_960_720.jpg" alt="" />
 				</div>
@@ -108,7 +111,7 @@
 					</ul>
 				</div>
 			</article>
-			<article class="videos-container">
+			<article class="videos-container" id="videos">
 				<div class="videos-container__content">
 					<h3 class="videos-container__content__subheader header--secondary">Watch My Content</h3>
 					<h2 class="videos-container__content__header header--primary videos-container__content__title">
@@ -173,7 +176,7 @@
 					</div>
 				</div>
 			</article>
-			<article class="media-container">
+			<article class="media-container" id="socials">
 				<h3 class="media-container__subheader header--secondary">My Online Activity</h3>
 				<h2 class="media-container__title header--primary">Social Media</h2>
 				<p class="media-container__description">
@@ -203,7 +206,7 @@
 					></a>
 				</ul>
 			</article>
-			<div class="contact-form-wrapper">
+			<div class="contact-form-wrapper" id="contact">
 				<form action="" class="contact-form">
 					<div class="contact-form__content">
 						<h3 class="contact-form__content__subheader header--secondary">Let's get in touch</h3>

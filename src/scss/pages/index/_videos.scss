@@ -1,0 +1,41 @@
+
+.videos-container {
+	padding: 2rem 1rem;
+	background: radial-gradient(circle at 100%, var(--clr-n1), var(--clr-n2));
+
+	@media screen and (min-width: 900px) {
+		padding: 2rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 4.5rem;
+	}
+
+	&__content {
+		@media screen and (min-width: 900px) {
+			text-align: center;
+		}
+
+		&__title {
+			margin-bottom: 1rem;
+			line-height: 1;
+		}
+
+		&__description {
+			max-width: 70ch;
+			margin-bottom: 2rem;
+			margin-inline: auto;
+		}
+	}
+}
+
+
+.video-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	@media screen and (min-width: 900px) {
+		gap: 2rem;
+	}
+}

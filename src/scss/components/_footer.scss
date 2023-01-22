@@ -1,0 +1,100 @@
+.footer {
+	padding: 2rem 1rem;
+	background-color: var(--clr-n1);
+
+	@media screen and (min-width: 900px) {
+		padding: 2rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 4.5rem 4.5rem 2rem;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&__row-1 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1rem;
+
+		@media screen and (min-width: 900px) {
+			flex-direction: row;
+		}
+
+		h2 {
+			margin-top: 0.5rem;
+			line-height: 1;
+		}
+	}
+
+	&__media {
+		display: flex;
+		align-items: center;
+		font-weight: normal;
+		list-style: none;
+		gap: 1.5rem;
+
+		a {
+			color: var(--clr-text-2);
+		}
+
+		&__icon {
+			font-size: 1.5rem;
+
+			:hover {
+				color: var(--clr-secondary-main);
+			}
+		}
+	}
+
+	&__row-2 {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 1.5rem;
+		gap: 1rem;
+
+		@media screen and (min-width: 300px) {
+			gap: 2rem;
+			& > * {
+				flex: 1;
+			}
+		}
+
+		& > * {
+			min-width: 125px;
+			max-width: 200px;
+		}
+	}
+
+	&__links {
+		&__header {
+			font-size: 1.25rem;
+		}
+
+		&__list {
+			margin-bottom: 0;
+			padding-left: 0;
+			list-style: none;
+
+			&__link + &__link {
+				margin-top: 0.25rem;
+			}
+		}
+	}
+
+	&__row-3 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 1.5rem;
+		gap: 0 2rem;
+
+		p {
+			font-size: 1rem;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.timeline-section {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 1.5rem;
+	background: radial-gradient(circle at 100%, var(--clr-n0) 30%, var(--clr-n1) 100%);
+	gap: 2rem;
+
+	@media screen and (min-width: 900px) {
+		flex-direction: row;
+		align-items: center;
+		padding: 2rem;
+	}
+
+	@media screen and (min-width: 1200px) {
+		padding: 4.5rem;
+		gap: 4rem;
+	}
+
+	&__image {
+		max-width: max(100%, 200px);
+
+		@media screen and (min-width: 900px) {
+			width: 40%;
+		}
+
+		img {
+			border-radius: 1rem;
+
+			@media screen and (min-width: 900px) {
+				margin-inline: auto;
+			}
+		}
+	}
+
+	&__content {
+		h2 {
+			line-height: 1;
+		}
+
+		li {
+			color: var(--clr-text-2);
+		}
+	}
+}

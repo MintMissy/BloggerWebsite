@@ -1,0 +1,30 @@
+
+.navbar {
+	display: none;
+	z-index: 1;
+	position: absolute;
+	top: 1rem;
+	padding-inline: 2rem;
+
+	@media screen and (min-width: 600px) {
+		display: block;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: center;
+		padding-left: 0;
+		font-size: 1.25rem;
+		list-style: none;
+		gap: 2rem;
+
+		a {
+			color: var(--clr-text-2);
+			text-decoration: unset;
+
+			&:hover {
+				color: var(--clr-text-1);
+			}
+		}
+	}
+}

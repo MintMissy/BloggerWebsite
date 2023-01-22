@@ -1,0 +1,49 @@
+/* Text properties */
+h1,
+h2,
+h3 {
+	font-family: var(--font-family-primary);
+	font-weight: var(--font-weight-bold);
+}
+
+h2 {
+	font-size: 2.5rem;
+	font-weight: 800;
+}
+
+p {
+	color: var(--clr-text-2);
+	font-size: 1.25rem;
+}
+
+.header--primary {
+	margin-top: 0;
+	font-weight: 900;
+}
+
+.header--secondary {
+	margin-bottom: 0.35em;
+	color: var(--clr-secondary-main);
+	font-size: 1.25rem;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+.underline-animation {
+	position: relative;
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 2px;
+		background-color: var(--clr-secondary-main);
+		content: "";
+		transition: width 0.2s;
+	}
+
+	&:hover::before {
+		width: 100%;
+	}
+}
