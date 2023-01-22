@@ -1,24 +1,24 @@
 @property --num {
-	syntax: "<integer>";
-	initial-value: 0;
-	inherits: false;
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
 }
 
 .counter {
-	transition: --num 3s;
-	counter-set: num var(--num);
+  transition: --num 3s;
+  counter-set: num var(--num);
 
-	&::before {
-		content: counter(num);
-	}
+  &::before {
+    content: counter(num);
+  }
 }
 
 .counter--readers.initialized {
-	--num: 101;
+  --num: 101;
 }
 .counter--views.initialized {
-	--num: 1400;
+  --num: 1400;
 }
 .counter--watch-time.initialized {
-	--num: 3300;
+  --num: 3300;
 }

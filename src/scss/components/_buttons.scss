@@ -1,65 +1,65 @@
 .btn {
-	position: relative;
-	padding: 0.5rem 1.25rem;
-	border: none;
-	border-radius: 4px;
-	outline: none;
-	color: var(--clr-n1);
-	font-size: 1.25rem;
-	font-weight: 700;
-	cursor: pointer;
+  position: relative;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: var(--clr-n1);
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
 
-	& > * {
-		z-index: 10;
-		position: relative;
-	}
+  & > * {
+    z-index: 10;
+    position: relative;
+  }
 
-	&::before {
-		z-index: 1;
-		position: absolute;
-		top: -1px;
-		bottom: -1px;
-		width: 0;
-		border-radius: 4px;
-		background-color: var(--clr-n2);
-		content: "";
-		transition: width 0.2s;
-		inset: 0;
-	}
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    width: 0;
+    border-radius: 4px;
+    background-color: var(--clr-n2);
+    content: "";
+    transition: width 0.2s;
+    inset: 0;
+  }
 
-	&:hover {
-		color: var(--clr-n8);
-		&::before {
-			width: 100%;
-		}
-	}
+  &:hover {
+    color: var(--clr-n8);
+    &::before {
+      width: 100%;
+    }
+  }
 }
 
 .btn--primary {
-	background-color: var(--clr-primary-main);
+  background-color: var(--clr-primary-main);
 
-	&::before {
-		background-color: var(--clr-secondary-main);
-	}
-	&:hover {
-		color: var(--clr-n1);
-	}
+  &::before {
+    background-color: var(--clr-secondary-main);
+  }
+  &:hover {
+    color: var(--clr-n1);
+  }
 }
 
 .btn--icon {
-	display: flex;
-	align-items: center;
-	gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
-	i {
-		font-size: 1.75rem;
-		line-height: 0;
-	}
+  i {
+    font-size: 1.75rem;
+    line-height: 0;
+  }
 }
 
 .btn--icon--small {
-	i {
-		font-size: 1.5rem;
-		line-height: 0;
-	}
+  i {
+    font-size: 1.5rem;
+    line-height: 0;
+  }
 }

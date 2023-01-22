@@ -1,46 +1,33 @@
 @import "./scss/reset";
 
 :root {
-	/* Primary Colors */
-	--clr-primary-main: #3fe544;
-	/* Secondary Colors */
-	--clr-secondary-light: #ff6297;
-	--clr-secondary-main: #e62968;
-	/* Neutral Colors */
-	--clr-n0: #08020e;
-	--clr-n1: #09050d;
-	--clr-n2: #091218;
-	--clr-n3: #0d2d33;
-	--clr-n4: #4d4d4d;
-	--clr-n5: #cccccc;
-	--clr-n6: #e6e6e6;
-	--clr-n7: #f2f2f2;
-	--clr-n8: #ffffff;
-	/* Text Colors */
-	--clr-text-1: #ffffff;
-	--clr-text-2: #cfd4d4;
+  /* Primary Colors */
+  --clr-primary-main: #3fe544;
+  /* Secondary Colors */
+  --clr-secondary-light: #ff6297;
+  --clr-secondary-main: #e62968;
+  /* Neutral Colors */
+  --clr-n0: #08020e;
+  --clr-n1: #09050d;
+  --clr-n2: #091218;
+  --clr-n3: #0d2d33;
+  --clr-n4: #4d4d4d;
+  --clr-n5: #cccccc;
+  --clr-n6: #e6e6e6;
+  --clr-n7: #f2f2f2;
+  --clr-n8: #ffffff;
+  /* Text Colors */
+  --clr-text-1: #ffffff;
+  --clr-text-2: #cfd4d4;
 }
 
 body {
-	position: relative;
-	background-color: var(--clr-n2);
-	color: var(--clr-text-1);
-	font-family: "Nunito", sans-serif;
+  position: relative;
+  background-color: var(--clr-n2);
+  color: var(--clr-text-1);
+  font-family: "Nunito", sans-serif;
 }
 
 @import "./scss/typography";
 @import "./scss/components";
 @import "./scss/pages/index";
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,54 +1,53 @@
-
 .timeline {
-	list-style: none;
+  list-style: none;
 
-	li {
-		position: relative;
-		font-size: 1.25rem;
-		padding-block: 0.25rem;
+  li {
+    position: relative;
+    font-size: 1.25rem;
+    padding-block: 0.25rem;
 
-		span {
-			color: var(--clr-text-1);
-		}
+    span {
+      color: var(--clr-text-1);
+    }
 
-		&::before {
-			z-index: 10;
-			position: absolute;
-			top: 50%;
-			left: -2rem;
-			width: 0.65rem;
-			height: 0.65rem;
-			border-radius: 1rem;
-			background-color: var(--clr-secondary-light);
-			content: "";
-			translate: 0 -50%;
-		}
+    &::before {
+      z-index: 10;
+      position: absolute;
+      top: 50%;
+      left: -2rem;
+      width: 0.65rem;
+      height: 0.65rem;
+      border-radius: 1rem;
+      background-color: var(--clr-secondary-light);
+      content: "";
+      translate: 0 -50%;
+    }
 
-		&::after {
-			position: absolute;
-			left: -1.75rem;
-			width: 2px;
-			background-color: var(--clr-secondary-main);
-			content: "";
-		}
+    &::after {
+      position: absolute;
+      left: -1.75rem;
+      width: 2px;
+      background-color: var(--clr-secondary-main);
+      content: "";
+    }
 
-		&:not(:last-child):not(:first-child) {
-			&::after {
-				top: 0;
-				bottom: 0;
-			}
-		}
-		&:first-child {
-			&::after {
-				top: 50%;
-				bottom: 0;
-			}
-		}
-		&:last-child {
-			&::after {
-				top: 0;
-				bottom: 50%;
-			}
-		}
-	}
+    &:not(:last-child):not(:first-child) {
+      &::after {
+        top: 0;
+        bottom: 0;
+      }
+    }
+    &:first-child {
+      &::after {
+        top: 50%;
+        bottom: 0;
+      }
+    }
+    &:last-child {
+      &::after {
+        top: 0;
+        bottom: 50%;
+      }
+    }
+  }
 }
