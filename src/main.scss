@@ -31,8 +31,8 @@ html:focus-within {
 /* Set core body defaults */
 body {
 	max-width: 100vw;
-	overflow-x: hidden;
 	min-height: 100vh;
+	overflow-x: hidden;
 	line-height: 1.5;
 	text-rendering: optimizeSpeed;
 }
@@ -728,8 +728,8 @@ body {
 		}
 
 		&:hover {
-			rotate: 15deg;
-			scale: 1.1;
+			rotate: 15deg !important;
+			scale: 1.1 !important;
 
 			i {
 				color: var(--clr-n8);
@@ -1016,4 +1016,29 @@ textarea.input {
 	&:hover::before {
 		width: 100%;
 	}
+}
+
+@property --num {
+	syntax: "<integer>";
+	initial-value: 0;
+	inherits: false;
+}
+
+.counter {
+	transition: --num 3s;
+	counter-set: num var(--num);
+
+	&::before {
+		content: counter(num);
+	}
+}
+
+.counter--readers.initialized{
+	--num: 101;
+}
+.counter--views.initialized{
+	--num: 1400;
+}
+.counter--watch-time.initialized{
+	--num: 3300;
 }

@@ -13,10 +13,9 @@
 			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="styles/styles.css" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-		<script src="./js/main.js" defer></script>
+		<script src="dist/main.js" defer></script>
 	</head>
 	<body>
 		<nav class="navbar">
@@ -57,7 +56,7 @@
 					<img src="./image/smile-2072907_960_720.jpg" alt="" />
 				</div>
 				<div class="about__content">
-					<div>
+					<div class="about__col-1">
 						<h3 class="about__content__subheader-1 header--secondary">Hello I'm Mica Miyanna</h3>
 						<h2 class="about__content__header-1 header--primary">Few Words About Me</h2>
 						<p class="about__content__description-1">
@@ -65,7 +64,7 @@
 							iste inventore repellat omnis recusandae illum ad, reprehenderit tenetur eveniet quia voluptates
 						</p>
 					</div>
-					<div>
+					<div class="about__col-2">
 						<h3 class="about__content__subheader-2 header--secondary">How it all started</h3>
 						<h2 class="about__content__header-2 header--primary">The beginnings of my career</h2>
 						<p class="about__content__description-2">
@@ -79,15 +78,15 @@
 				<h2 class="statistics__title">Blog Statistics</h2>
 				<div class="statistics__list">
 					<div class="statistics__list__stat">
-						<p>102K</p>
+						<p class="counter counter--readers">K</p>
 						<h3>Monthly Readers</h3>
 					</div>
 					<div class="statistics__list__stat">
-						<p>102K</p>
+						<p class="counter counter--views">K</p>
 						<h3>Video Views</h3>
 					</div>
 					<div class="statistics__list__stat">
-						<p>1000H+</p>
+						<p class="counter counter--watch-time">H+</p>
 						<h3>Read Time</h3>
 					</div>
 				</div>
@@ -112,8 +111,10 @@
 			<article class="videos-container">
 				<div class="videos-container__content">
 					<h3 class="videos-container__content__subheader header--secondary">Watch My Content</h3>
-					<h2 class="videos-container__content__header header--primary videos-container__content__title">My Latest Videos</h2>
-					<p class="videos-container__content__description videos-container__content__description">
+					<h2 class="videos-container__content__header header--primary videos-container__content__title">
+						My Latest Videos
+					</h2>
+					<p class="videos-container__content__description">
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quam veritatis iusto maiores minima.
 						Autem assumenda dolores aspernatur, aliquid a quae eveniet
 					</p>
@@ -223,16 +224,20 @@
 								</div>
 							</div>
 						</div>
-						<div class="input-container">
-							<label for="email">Email</label>
-							<div class="input-wrapper">
-								<input class="input" type="email" name="email" id="email" />
+						<div class="input-group">
+							<div class="input-container">
+								<label for="email">Email</label>
+								<div class="input-wrapper">
+									<input class="input" type="email" name="email" id="email" />
+								</div>
 							</div>
 						</div>
-						<div class="input-container">
-							<label for="message">Message</label>
-							<div class="input-wrapper">
-								<textarea class="input" name="message"></textarea>
+						<div class="input-group">
+							<div class="input-container">
+								<label for="message">Message</label>
+								<div class="input-wrapper">
+									<textarea class="input" name="message"></textarea>
+								</div>
 							</div>
 						</div>
 					</div>
